@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Algoritma_Analizi
 {
+   
     internal class Sort_Functions
     {
+
+
+      
 
         public static void Bubble_Sort(int[] A)
         { 
@@ -61,6 +66,7 @@ namespace Algoritma_Analizi
             int temp;
             if (A.Length == 0 || A is null) return;
 
+            
 
             sw.Start();
             for (i = 1; i < A.Length; i++)
@@ -102,6 +108,7 @@ namespace Algoritma_Analizi
             int temp;
             if (temp_Array.Length == 0 || temp_Array is null) return 0;
 
+            
 
             sw.Start();
             for (i = 1; i < temp_Array.Length; i++)
@@ -121,4 +128,8 @@ namespace Algoritma_Analizi
             return temp_Array[k - 1];       
         }
     }
+
+
+ 
+    
 }
